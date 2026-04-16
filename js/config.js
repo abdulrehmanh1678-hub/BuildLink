@@ -47,8 +47,8 @@ const Config = {
 
     // Feature Flags
     features: {
-        useBackend: true, // Set to true after backend is installed and running
-        useLocalStorageFallback: false, // Keep localStorage as fallback
+        useBackend: false, // Set to true after backend is installed and running
+        useLocalStorageFallback: true, // Keep localStorage as fallback
         enableRealtime: false, // Future: WebSocket support
         enableEmailVerification: false // Future: Email verification
     },

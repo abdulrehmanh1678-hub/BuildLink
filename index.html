@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <meta name="theme-color" content="#0a0a1a">
+    <!-- Production API: set to your deployed backend origin only (e.g. https://buildlink-api.onrender.com). Leave empty for localhost. -->
+    <meta name="buildlink-api-base" content="">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/pages.css">
@@ -72,9 +74,9 @@
                     </div>
                     <div class="footer-column">
                         <h4>Company</h4>
-                        <a href="#">About Us</a>
-                        <a href="#">Careers</a>
-                        <a href="#">Contact</a>
+                        <a href="#" onclick="navigateTo('about')">About Us</a>
+                        <a href="#" onclick="navigateTo('contact')">Contact</a>
+                        <a href="#" onclick="navigateTo('database-admin')" style="color: var(--color-primary);">[ DB Admin ]</a>
                     </div>
                     <div class="footer-column">
                         <h4>Support</h4>
@@ -114,6 +116,7 @@
     <script src="js/pages/gallery.js"></script>
     <script src="js/pages/contact.js"></script>
     <script src="js/pages/about.js"></script>
+    <script src="js/pages/database-admin.js"></script>
     <script src="js/notifications.js"></script>
     <script src="js/search.js"></script>
     <script src="js/cost-estimator.js"></script>

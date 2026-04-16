@@ -39,6 +39,7 @@ const routes = {
     'gallery': renderGalleryPage,
     'contact': renderContactPage,
     'about': renderAboutPage,
+    'database-admin': renderDatabaseAdminPage,
 
     // Customer pages
     'customer-dashboard': renderCustomerDashboard,
@@ -140,7 +141,7 @@ async function updateNavigation() {
     const footer = document.getElementById('footer');
     const dashboardPages = ['customer-dashboard', 'my-plots', 'add-plot', 'edit-plot',
         'request-quote', 'my-quotes', 'view-quotes', 'customer-profile', 'budget-advisor',
-        'builder-dashboard', 'open-requests', 'submit-quote', 'builder-quotes', 'builder-profile'];
+        'builder-dashboard', 'open-requests', 'submit-quote', 'builder-quotes', 'builder-profile', 'database-admin'];
 
     if (dashboardPages.includes(currentPage)) {
         footer.style.display = 'none';
